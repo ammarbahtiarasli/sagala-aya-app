@@ -1,0 +1,803 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="sagala aya app">
+    <meta name="author" content="AmmarBahtiar & Alfarozy">
+
+    <title>Sagala Aya App</title>
+
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+
+    <!-- Bootstrap css -->
+    <link href="../css/bootstrap.css?v=2.0" rel="stylesheet" type="text/css" />
+
+    <!-- Custom css -->
+    <link href="../css/ui.css?v=2.0" rel="stylesheet" type="text/css" />
+    <link href="../css/responsive.css?v=2.0" rel="stylesheet" type="text/css" />
+
+    <!-- Font awesome 5 -->
+    <link href="../fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css"
+        integrity="sha512-g0BdMh4zEp4DuzHdoenUitpFx195QZfSFq5sd04kXZLwz5F9pUlGqwk+1jlvBBFGOnTCt0b5FsmQyl+5v2fxWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .swiper {
+            width: 100%;
+            height: 450px;
+        }
+    </style>
+
+</head>
+
+<body class="bg-light">
+
+    <header class="section-header">
+        <section class="header-main bg-white">
+            <div class="container">
+                <div class="row gy-3 align-items-center">
+                    <div class="col-lg-2 col-sm-4 col-4">
+                        <a href="../marketplace/home-page.html" class="navbar-brand">
+                            <img class="logo col-12" src="../images/logo.png">
+                        </a> <!-- brand end.// -->
+                    </div>
+                    <div class="order-lg-last col-lg-5 col-sm-8 col-8">
+                        <div class="float-end">
+                            <a data-bs-toggle="offcanvas" href="../marketplace/cart.html" class="btn btn-light">
+                                <i class="fa fa-shopping-cart"></i> <span
+                                    class="ms-1 d-none d-sm-inline-block">Keranjang</span>
+                            </a>
+                            <a href="../auth/login.html" class="btn btn-light">
+                                <i class="fa fa-user"></i> <span class="ms-1 d-none d-sm-inline-block">Masuk</span>
+                            </a>
+                            <a href="../auth/register-customer.html" class="btn btn-light">
+                                <i class="fa fa-user-plus"></i> <span
+                                    class="ms-1 d-none d-sm-inline-block">Daftar</span>
+                            </a>
+                        </div>
+                    </div> <!-- col end.// -->
+                    <div class="col-lg-5 col-md-12 col-12">
+                        <form action="#" class="">
+                            <div class="input-group">
+                                <input type="search" class="form-control" style="width:55%"
+                                    placeholder="Mau nyari apa ?">
+                                <select class="form-select">
+                                    <option value="">Semua</option>
+                                    <option value="comments">Populer</option>
+                                    <option value="content">Terbaru</option>
+                                </select>
+                                <button class="btn btn-success">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div> <!-- input-group end.// -->
+                        </form>
+                    </div> <!-- col end.// -->
+
+                </div> <!-- row end.// -->
+            </div> <!-- container end.// -->
+        </section> <!-- header-main end.// -->
+
+        <nav class="navbar navbar-dark bg-success navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler border" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar_main" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar_main">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="#">UMKM Lokal </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Produk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pulsa, Tagihan & Hiburan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gratis Ongkir & Voucher</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bayar Di tempat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown">
+                                Layanan
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li> <a class="dropdown-item" href="#">Investor</a> </li>
+                                <li> <a class="dropdown-item" href="../promosi-branding/index.html">Influencer</a> </li>
+                                <li> <a class="dropdown-item" href="../module-learning/homepage.html">Lembaga
+                                        Pelatihan</a> </li>
+                                <li> <a class="dropdown-item" href="#">Lapangan Pekerjaan</a> </li>
+                                <li> <a class="dropdown-item" href="../blog/index.html">Portal berita</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> <!-- collapse end.// -->
+            </div> <!-- container end.// -->
+        </nav> <!-- navbar end.// -->
+    </header> <!-- section-header end.// -->
+
+    <!-- ================ SECTION INTRO ================ -->
+    <section class="section-intro padding-top-sm">
+        <div class="container">
+            <main class="card p-3">
+                <div class="row">
+                    <aside class="col-lg-3">
+                        <nav class="nav flex-column nav-pills">
+                            <a class="nav-link active" aria-current="page" href="#">Produk Khas Daerah</a>
+                            <a class="nav-link" href="#">Jajanan Tradisional</a>
+                            <a class="nav-link" href="#">Jajanan Modern</a>
+                            <a class="nav-link" href="#">Pakaian Pria</a>
+                            <a class="nav-link" href="#">Sepatu Pria</a>
+                            <a class="nav-link" href="#">Tas Pria</a>
+                            <a class="nav-link" href="#">Pakaian Wanita</a>
+                            <a class="nav-link" href="#">Sepatu Wanita</a>
+                            <a class="nav-link" href="#">Tas Wanita</a>
+                            <a class="nav-link" href="#">Alat Tulis Kantor</a>
+                        </nav>
+                    </aside>
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="card-banner overlay-gradient"
+                                            style="min-height:360px; height: 450px; background-image: url('../images/posts/1.jpg');">
+                                            <div class="card-img-overlay">
+                                                <h3 class="card-title text-white">Sagala Aya App</h3>
+
+                                                <p class="card-text text-white" style="max-width: 400px">
+                                                    Selamat datang di Super App Unpas, dimana semua bisa menjadi
+                                                    Mitra.
+                                                </p>
+                                                <a href="" class="btn btn-light">Bisa jadi apa sih kamu disini?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="card-banner overlay-gradient"
+                                            style="min-height:360px; height: 450px; background-image: url('../images/banners/inves.jpg');">
+                                            <div class="card-img-overlay">
+                                                <h3 class="card-title text-white">Ingin Menjadi Investor ?</h3>
+
+                                                <p class="card-text text-white" style="max-width: 400px">
+                                                    Selamat datang di Super App Unpas, dimana semua bisa menjadi
+                                                    Mitra.
+                                                </p>
+                                                <a href="" class="btn btn-warning">Gabung menjadi Investor</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-banner overlay-gradient"
+                                            style="min-height:360px; height: 450px; background-image: url('../images/banners/influencer.jpg');">
+                                            <div class="card-img-overlay">
+                                                <h3 class="card-title text-white">Ingin Menjadi Influencer ?</h3>
+
+                                                <p class="card-text text-white" style="max-width: 400px">
+                                                    Selamat datang di Super App Unpas, dimana semua bisa menjadi
+                                                    Mitra.
+                                                </p>
+                                                <a href="../promosi-branding/index.html" class="btn btn-success">Gabung
+                                                    menjadi Influencer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-banner overlay-gradient"
+                                            style="min-height:360px; height: 450px; background-image: url('../images/banners/kerja.jpg');">
+                                            <div class="card-img-overlay">
+                                                <h3 class="card-title text-white">Ingin Mencari Kerja ?</h3>
+
+                                                <p class="card-text text-white" style="max-width: 400px">
+                                                    Selamat datang di Super App Unpas, dimana semua bisa menjadi
+                                                    Mitra.
+                                                </p>
+                                                <a href="" class="btn btn-warning">Cari Lapangan Kerja</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-banner overlay-gradient"
+                                            style="min-height:360px; height: 450px; background-image: url('../images/banners/pelatihan.jpg');">
+                                            <div class="card-img-overlay">
+                                                <h3 class="card-title text-white">Ingin Mencari Pelatihan ?</h3>
+
+                                                <p class="card-text text-white" style="max-width: 400px">
+                                                    Selamat datang di Super App Unpas, dimana semua bisa menjadi
+                                                    Mitra.
+                                                </p>
+                                                <a href="../module-learning/homepage.html" class="btn btn-light">Cari
+                                                    Pelatihan</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev text-white"></div>
+                                <div class="swiper-button-next text-white"></div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+        </div> <!-- container end.// -->
+    </section>
+    <!-- ================ SECTION INTRO END.// ================ -->
+
+    <section class="padding-top">
+        <div class="container">
+            <article class="card content-body">
+
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6">
+                        <figure class="itemside align-items-center">
+                            <div class="aside">
+                                <span class="rounded-circle text-success icon-md bg-success-light">
+                                    <i class="fa fa-book"></i>
+                                </span>
+                            </div>
+                            <a href="../blog/home-page.html">
+                                <figcaption class="info">
+                                    <h6 class="title">Blog</h6>
+                                    <p class="link-secondary">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit sed
+                                        do
+                                        eiusmor </p>
+                                </figcaption>
+                            </a>
+
+                        </figure> <!-- itemside // -->
+                    </div><!-- col // -->
+                    <div class="col-lg-4 col-md-6">
+                        <figure class="itemside align-items-center">
+                            <div class="aside">
+                                <span class="rounded-circle text-success icon-md bg-success-light">
+                                    <i class="fa fa-chalkboard"></i>
+                                </span>
+                            </div>
+                            <a href="../module-learning/home-page.html">
+                                <figcaption class="info">
+                                    <h6 class="title">Pelatihan & Webinar</h6>
+                                    <p class="link-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                        sed do eiusmor </p>
+                                </figcaption>
+                            </a>
+                        </figure> <!-- itemside // -->
+                    </div><!-- col // -->
+                    <div class="col-lg-4 col-md-6">
+                        <figure class="itemside align-items-center">
+                            <div class="aside">
+                                <span class="rounded-circle text-success icon-md bg-success-light">
+                                    <i class="fa fa-briefcase"></i>
+                                </span>
+                            </div>
+                            <a href="">
+                                <figcaption class="info">
+                                    <h6 class="title">Lapangan Pekerjaan</h6>
+                                    <p class="link-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                        sed do eiusmor </p>
+                                </figcaption>
+                            </a>
+                        </figure> <!-- itemside // -->
+                    </div> <!-- col // -->
+                    <div class="col-lg-4 col-md-6">
+                        <figure class="itemside align-items-center">
+                            <div class="aside">
+                                <span class="rounded-circle text-success icon-md bg-success-light">
+                                    <i class="fa fa-code-branch"></i>
+                                </span>
+                            </div>
+                            <a href="../promosi-branding/index.html">
+                                <figcaption class="info">
+                                    <h6 class="title">Influencer</h6>
+                                    <p class="link-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                        sed do eiusmor </p>
+                                </figcaption>
+                            </a>
+                        </figure> <!-- itemside // -->
+                    </div><!-- col // -->
+                    <div class="col-lg-4 col-md-6">
+                        <figure class="itemside align-items-center">
+                            <div class="aside">
+                                <span class="rounded-circle text-success icon-md bg-success-light">
+                                    <i class="fa fa-dollar-sign"></i>
+                                </span>
+                            </div>
+                            <figcaption class="info">
+                                <h6 class="title">Investor</h6>
+                                <p class="link-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
+                                    do eiusmor </p>
+                            </figcaption>
+                        </figure> <!-- itemside // -->
+                    </div><!-- col // -->
+                    <div class="col-lg-4 col-md-6">
+                        <figure class="itemside align-items-center">
+                            <div class="aside">
+                                <span class="rounded-circle text-success icon-md bg-success-light">
+                                    <i class="fa fa-audio-description"></i>
+                                </span>
+                            </div>
+                            <figcaption class="info">
+                                <h6 class="title">Pengiklan</h6>
+                                <p class="link-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
+                                    do eiusmor </p>
+                            </figcaption>
+                        </figure> <!-- itemside // -->
+                    </div> <!-- col // -->
+                </div>
+            </article> <!-- card.// -->
+        </div>
+    </section>
+
+
+    <!-- ================ SECTION PRODUCTS ================ -->
+    <section class="padding-top">
+        <div class="container">
+
+            <header class="section-heading">
+                <h3 class="section-title">Kejar Diskon Spesial</h3>
+            </header>
+
+            <!-- section produk -->
+            <!-- code here -->
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <span class="topbar">
+                            <span class="badge bg-danger"> 4.4 </span>
+                        </span>
+                        <div class="img-wrap">
+                            <img src="../images/items/12.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 49.999</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Kaos Distro Original Bandung</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <span class="topbar">
+                            <span class="badge bg-danger"> 4.4 </span>
+                        </span>
+                        <div class="img-wrap">
+                            <img src="../images/items/8.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Tas bahan Jeans asli Bandung</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kab. Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <span class="topbar">
+                            <span class="badge bg-danger"> 4.4 </span>
+                        </span>
+                        <div class="img-wrap">
+                            <img src="../images/items/9.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 99.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Celana Jeans Pria merk UMKM Lokal</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <span class="topbar">
+                            <span class="badge bg-danger"> 4.4 </span>
+                        </span>
+                        <div class="img-wrap">
+                            <img src="../images/items/14.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 259.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Dompet Kulit Domba asli Garut</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kab. Garut</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <div class="img-wrap">
+                            <img src="../images/items/0.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 2.599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Xiaomi Redmi 8 Original Global Version 4GB</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <div class="img-wrap">
+                            <img src="../images/items/0.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 2.599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Xiaomi Redmi 8 Original Global Version 4GB</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <div class="img-wrap">
+                            <img src="../images/items/0.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 2.599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Xiaomi Redmi 8 Original Global Version 4GB</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <div class="img-wrap">
+                            <img src="../images/items/0.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 2.599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Xiaomi Redmi 8 Original Global Version 4GB</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- container end.// -->
+    </section>
+    <!-- ================ SECTION PRODUCTS END.// ================ -->
+
+    <!-- ================ SECTION PRODUCTS ================ -->
+    <section class="padding-top">
+        <div class="container">
+
+            <header class="section-heading">
+                <h3 class="section-title">Traktir Pengguna Baru</h3>
+            </header>
+
+            <!-- section produk -->
+            <!-- code here -->
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <span class="topbar">
+                            <span class="badge bg-danger"> New </span>
+                        </span>
+                        <div class="img-wrap">
+                            <img src="../images/items/0.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 2.599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Xiaomi Redmi 8 Original Global Version 4GB</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <span class="topbar">
+                            <span class="badge bg-danger"> New </span>
+                        </span>
+                        <div class="img-wrap">
+                            <img src="../images/items/0.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 2.599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Xiaomi Redmi 8 Original Global Version 4GB</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <span class="topbar">
+                            <span class="badge bg-danger"> New </span>
+                        </span>
+                        <div class="img-wrap">
+                            <img src="../images/items/0.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 2.599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Xiaomi Redmi 8 Original Global Version 4GB</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <span class="topbar">
+                            <span class="badge bg-danger"> New </span>
+                        </span>
+                        <div class="img-wrap">
+                            <img src="../images/items/0.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 2.599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Xiaomi Redmi 8 Original Global Version 4GB</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <div class="img-wrap">
+                            <img src="../images/items/0.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 2.599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Xiaomi Redmi 8 Original Global Version 4GB</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <div class="img-wrap">
+                            <img src="../images/items/0.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 2.599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Xiaomi Redmi 8 Original Global Version 4GB</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <div class="img-wrap">
+                            <img src="../images/items/0.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 2.599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Xiaomi Redmi 8 Original Global Version 4GB</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="card card-product-grid">
+                        <div class="img-wrap">
+                            <img src="../images/items/0.jpg">
+                        </div>
+                        <div class="info-wrap border-top">
+                            <div class="price-wrap">
+                                <strong class="price">Rp. 2.599.000</strong>
+                            </div> <!-- price-wrap.// -->
+                            <a href="#" class="title">Xiaomi Redmi 8 Original Global Version 4GB</a>
+                            <p class="text-muted small mt-2"> <i class="fa fa-map-marker"></i> Kota Bandung</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- container end.// -->
+    </section>
+    <!-- ================ SECTION PRODUCTS END.// ================ -->
+
+
+    <!-- ================ SECTION FEATURE ================ -->
+    <article class="card content-body">
+        <div class="container">
+
+            <div class="row g-5">
+                <div class="col-md-3">
+                    <figure class="icontext">
+                        <div class="icon">
+                            <span class="icon-sm">
+                                <i class="fa fa-coins fa-lg text-success"></i>
+                            </span>
+                        </div>
+                        <figcaption class="text">
+                            <h6 class="title">Harga Bersaing</h6>
+                            <p>Have you ever finally just </p>
+                        </figcaption>
+                    </figure> <!-- icontext // -->
+                </div><!-- col // -->
+                <div class="col-md-3">
+                    <figure class="icontext">
+                        <div class="icon">
+                            <span class="icon-sm">
+                                <i class="fa fa-car fa-lg text-success"></i>
+                            </span>
+                        </div>
+                        <figcaption class="text">
+                            <h6 class="title">Gratis Ongkir</h6>
+                            <p>Have you ever finally just </p>
+                        </figcaption>
+                    </figure> <!-- icontext // -->
+                </div><!-- col // -->
+                <div class="col-md-3">
+                    <figure class="icontext">
+                        <div class="icon">
+                            <span class="icon-sm">
+                                <i class="fa fa-comment-dots fa-lg text-success"></i>
+                            </span>
+                        </div>
+                        <figcaption class="text">
+                            <h6 class="title">Dukungan 24/7</h6>
+                            <p>Have you ever finally just </p>
+                        </figcaption>
+                    </figure> <!-- icontext // -->
+                </div> <!-- col // -->
+                <div class="col-md-3">
+                    <figure class="icontext">
+                        <div class="icon">
+                            <span class="icon-sm">
+                                <i class="fa fa-lock fa-lg text-success"></i>
+                            </span>
+                        </div>
+                        <figcaption class="text">
+                            <h6 class="title">Sangat Aman</h6>
+                            <p>Have you ever finally just </p>
+                        </figcaption>
+                    </figure> <!-- icontext // -->
+                </div><!-- col // -->
+            </div>
+        </div>
+    </article> <!-- card.// -->
+    <!-- ================ SECTION FEATURE END.// ================ -->
+
+    <!-- ===========  SECTION FOOTER 1 ========== -->
+    <footer class="section-footer bg-white shadow">
+        <div class="container">
+            <section class="footer-main padding-y">
+                <div class="row">
+                    <aside class="col-lg-4">
+                        <article class="me-lg-4 mb-4">
+                            <img class="logo col-12" src="../images/logo.png" class="logo-footers" height="80px">
+                            <p class="mt-3">Sagala Aya App adalah Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.</p>
+                            <nav>
+                                <a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i
+                                        class="fab fa-youtube"></i></a>
+                                <a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i
+                                        class="fab fa-twitter"></i></a>
+                            </nav>
+                        </article>
+                    </aside>
+                    <aside class="col-6 col-sm-3 col-lg-2">
+                        <h6 class="title">Tentang</h6>
+                        <ul class="list-menu mb-4">
+                            <li> <a href="#">Tentang Kami</a></li>
+                            <li> <a href="#">Cari UMKM</a></li>
+                            <li> <a href="#">Kategori</a></li>
+                            <li> <a href="#">Blogs</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="col-6 col-sm-3 col-lg-2">
+                        <h6 class="title">Informasi</h6>
+                        <ul class="list-menu mb-4">
+                            <li> <a href="#">Investor</a></li>
+                            <li> <a href="#">Influencer</a></li>
+                            <li> <a href="#">Pengiklan</a></li>
+                            <li> <a href="#">Lembaga Pelatihan</a></li>
+                            <li> <a href="#">Lapangan Pekerjaan</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="col-6 col-sm-3 col-lg-2">
+                        <h6 class="title">Untuk Pengguna</h6>
+                        <ul class="list-menu mb-4">
+                            <li> <a href="#"> Masuk </a></li>
+                            <li> <a href="#"> Daftar </a></li>
+                            <li> <a href="#"> Akun Settings </a></li>
+                            <li> <a href="#"> Pesanan Saya </a></li>
+                        </ul>
+                    </aside>
+                    <aside class="col-6 col-sm-2 col-lg-2">
+                        <h6 class="title"></h6>
+                        <a href="#" class="d-block mb-2"><img src="../images/misc/btn-appstore.png" height="40"></a>
+                        <a href="#" class="d-block mb-2"><img src="../images/misc/btn-market.png" height="40"></a>
+                    </aside>
+                </div> <!-- row.// -->
+            </section> <!-- footer-top.// -->
+
+            <section class="footer-bottom d-flex justify-content-lg-between border-top">
+                <p class="text-muted mb-0"> &copy; 2022 Sagala Aya App. All rights reserved. </p>
+                <nav>
+                    <a href="#" class="px-2 text-success">Powered By UNPAS</a>
+                </nav>
+            </section>
+        </div> <!-- container end.// -->
+    </footer>
+    <!-- ===========  SECTION FOOTER 1 END.// ========== -->
+
+
+    <!-- Bootstrap js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="../js/script.js?v=2.0"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"
+        integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+
+    </script>
+
+</body>
+
+</html>

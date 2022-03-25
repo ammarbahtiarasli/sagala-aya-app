@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i");
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary : #0EAD31;
+    --primary-hover:#14746F;
+    --secondary: #F4C10F;
+    --text-dark: #414141;
+    --text-light: #DADADA;
+    --bg-dark: #DADADA;
+    --bg-white: #F0F0F0;
+}
+.text-ji-primary {
+    color: var(--primary);
+    transition: 0.3s;
+
+}
+.text-ji-primary:hover{
+color: var(--primary-hover);
+}
+a {
+  color: #2dc653;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #25a244;
+  text-decoration: none;
+}
+
+body {
+    /* background-color: var(--bg-white); */
+    font-family: "Roboto";
+}
+
+input,
+textarea {
+  padding: 0.6rem 1rem;
+  border: none;
+  background: var(--light);
+  color: var(--dark);
+  outline: none;
+  width: 100%;
+  color: var(--text-color);
+  border-radius: 8px;
+  border: solid 1.5px var(--bg-dark);
+
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  color: var(--dark);
+  border: solid 1.5px var(--primary);
+  transition: 0.8s;
+
+}
